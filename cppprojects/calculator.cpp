@@ -93,6 +93,10 @@ int main() {
                         x = log10(x);
                         loopbreaker = false;
                         break;
+                    } else if (func == "sqrt" || func == "square root") {
+                        x = sqrt(x);
+                        loopbreaker = false;
+                        break;
                     } else {
                         std::cout << "\nPlease enter a valid function: ";
                         std::cin >> func;
@@ -162,6 +166,10 @@ int main() {
                         break;
                     } else if (func == "log" || func == "log10"){
                         y = log10(y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "sqrt" || func == "square root") {
+                        y = sqrt(y);
                         loopbreaker = false;
                         break;
                     } else {
