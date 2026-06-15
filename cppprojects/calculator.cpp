@@ -97,6 +97,30 @@ int main() {
                         x = sqrt(x);
                         loopbreaker = false;
                         break;
+                    } else if (func == "arcsin" || func == "arcsine" || func == "sin^-1" || func == "asin"){
+                        x = asin(x);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccos" || func =="acos" || func == "cos^-1"){
+                        x = acos(x);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arctan" || func == "atan" || func == "cos^-1"){
+                        x = atan(x);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccosec" || func == "acosec" || func == "cosec^-1" || func == "acsc" || func == "csc^-1"){
+                        x = asin(1/x);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arcsec" || func == "asec" || func == "sec^-1"){
+                        x = acos(1/x);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccotan" || func == "acot" || func == "acotan" || func == "arccot" || func == "cot^-1"){
+                        x = atan(1/x);
+                        loopbreaker = false;
+                        break;
                     } else {
                         std::cout << "\nPlease enter a valid function: ";
                         std::cin >> func;
@@ -168,8 +192,33 @@ int main() {
                         y = log10(y);
                         loopbreaker = false;
                         break;
-                    } else if (func == "sqrt" || func == "square root") {
+                    } else if (func == "sqrt" || func == "square root"){
                         y = sqrt(y);
+                        loopbreaker = false;
+                        break;
+                    } 
+                    else if (func == "arcsin" || func == "arcsine" || func == "sin^-1" || func == "asin"){
+                        y = asin(y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccos" || func =="acos" || func == "cos^-1"){
+                        y = acos(y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arctan" || func == "atan" || func == "cos^-1"){
+                        y = atan(y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccosec" || func == "acosec" || func == "cosec^-1" || func == "acsc" || func == "csc^-1"){
+                        y = asin(1/y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arcsec" || func == "asec" || func == "sec^-1"){
+                        y = acos(1/y);
+                        loopbreaker = false;
+                        break;
+                    } else if (func == "arccotan" || func == "acot" || func == "acotan" || func == "arccot" || func == "cot^-1"){
+                        y = atan(1/y);
                         loopbreaker = false;
                         break;
                     } else {
