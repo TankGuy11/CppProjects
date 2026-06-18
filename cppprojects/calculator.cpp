@@ -39,7 +39,11 @@ int main() {
     std::cout << "Welcome to the calculator app. Please enter a number: ";
     std::cin >> x;
     while (true) {
-    if (typeid(x).name() != typeid(6.7).name()){
+    if (std::cin.fail()){
+            //Clears the error
+            std::cin.clear();
+            //ignores the old input and newline
+            std::cin.ignore(100000, '\n');
             std::cout << "\nPlease enter a vaild number: ";
             std::cin >> x;
         } else {
@@ -140,8 +144,11 @@ int main() {
         std::cout << "\nPlease enter another number: ";
         std::cin >> y;
         while (true) {
-            if (typeid(y).name() != typeid(6.7).name()){
+            if (std::cin.fail()){
+                std::cin.clear();
+                std::cin.ignore(100000, '\n');
                 std::cout << "\nPlease enter a vaild number: ";
+                std::cin >> y;
             } else {
                 break;
             }
